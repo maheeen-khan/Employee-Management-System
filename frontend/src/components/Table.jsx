@@ -13,6 +13,8 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined';
+
 
 function createData(name, calories, fat, carbs, protein, price) {
   return {
@@ -119,11 +121,25 @@ Row.propTypes = {
 };
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
+  createData('#1002', 'Wade Warren', <span style={
+    {color: 'rgb(255, 0, 0)', border: '1px solid rgb(255, 0, 0)', padding: '2px 4px', borderRadius: '4px', fontSize: '12px',alignContent:'center'}
+  }>Pending</span>, '$24', <EditNoteOutlinedIcon/>, 3.99),
+
+  createData('#1003', 'Wade Warren',  <span style={
+    {color: 'rgb(18, 176, 52)', border: '1px solid rgb(18, 176, 52)', padding: '2px 4px', borderRadius: '4px', fontSize: '12px',alignContent:'center'}
+  }>Success</span>, '$37', <EditNoteOutlinedIcon/>, 4.99),
+
+  createData('#1004', 'Wade Warren',  <span style={
+    {color: 'rgb(255, 0, 0)', border: '1px solid rgb(255, 0, 0)', padding: '2px 4px', borderRadius: '4px', fontSize: '12px',alignContent:'center'}
+  }>Pending</span>, '$24', <EditNoteOutlinedIcon/>, 3.79),
+
+  createData('#1005', 'Wade Warren', <span style={
+    {color: 'rgb(18, 176, 52)', border: '1px solid rgb(18, 176, 52)', padding: '2px 4px', borderRadius: '4px', fontSize: '12px',alignContent:'center'}
+  }>Success</span>, '$67', <EditNoteOutlinedIcon/>, 2.5),
+
+  createData('#1006', 'Wade Warren', <span style={
+    {color: 'rgb(18, 176, 52)', border: '1px solid rgb(18, 176, 52)', padding: '2px 4px', borderRadius: '4px', fontSize: '12px',alignContent:'center'}
+  }>Success</span>, '$49', <EditNoteOutlinedIcon/>, 1.5),
 ];
 
 export default function CollapsibleTable() {
@@ -133,11 +149,11 @@ export default function CollapsibleTable() {
         <TableHead>
           <TableRow style={{backgroundColor:'rgb(234, 234, 234)'}}>
             <TableCell />
-            <TableCell style={{color:'rgb(104, 103, 103)'}}>Dessert (100g serving)</TableCell>
-            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Calories</TableCell>
-            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Fat&nbsp;(g)</TableCell>
-            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Protein&nbsp;(g)</TableCell>
+            <TableCell style={{color:'rgb(104, 103, 103)'}}>Order #</TableCell>
+            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Customer</TableCell>
+            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Payment</TableCell>
+            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Total</TableCell>
+            <TableCell align="right" style={{color:'rgb(104, 103, 103)'}}>Action</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

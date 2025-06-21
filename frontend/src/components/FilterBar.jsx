@@ -33,10 +33,10 @@ const FilterBar = () => {
             padding: '6px 12px',
             marginRight: '8px',
             '&.Mui-selected': {
-              backgroundColor: '#1976d2',
+              backgroundColor: '#A67B5B',
               color: 'white',
               '&:hover': {
-                backgroundColor: '#1565c0',
+                backgroundColor: '#906c51',
               }
             },
             '&:hover': {
@@ -63,6 +63,7 @@ const FilterBar = () => {
       </ToggleButtonGroup>
 
       <Button
+      style={{backgroundColor: '#6F4E37'}}
         variant="contained"
         startIcon={<AddIcon />}
         sx={{
