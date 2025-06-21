@@ -112,7 +112,7 @@ const TrafficReportPage = () => {
 
         </Box>
 
-        <Box sx={{ alignItems: 'center', backgroundColor: '#453F78', color: 'white', padding: '10px', paddingX: '22px', borderRadius: '7px', width: '24%', alignContent: 'center', marginTop: '25px' }}><span style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>Sessions <ArrowUpwardIcon fontSize='small' /> 19%</span><h1>3.2K</h1> <p style={{ fontSize: '13px' }}>22% last week</p></Box>
+        <Box sx={{ alignItems: 'center', backgroundColor: '#453F78', color: 'white', padding: '10px', paddingX: '22px', borderRadius: '7px', width: '24%', alignContent: 'center', marginTop: '25px' }}><span style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>Sessions </span><h1>3.2K</h1> <p style={{ fontSize: '13px' }}>22% last week</p></Box>
 
 
         <Box sx={{ alignItems: 'center', backgroundColor: '#C08B5C', color: 'white', padding: '10px', paddingX: '22px', borderRadius: '7px', width: '24%', alignContent: 'center', marginTop: '25px' }}><span style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>Bounce rate</span><h1>88.27%</h1> <p style={{ fontSize: '13px' }}>22% last week</p></Box>
