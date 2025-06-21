@@ -54,7 +54,7 @@ export default function BasicComposition() {
                     <BarPlot />
                     <LinePlot />
                     <MarkPlot />
-                    <ChartsXAxis label="X axis" axisId="x-axis-id" />
+                    <ChartsXAxis label="Months" axisId="x-axis-id" />
                     <ChartsYAxis label="Visitors" axisId="y-axis-id" />
                 </ChartContainer>
             </Paper>
